@@ -1,0 +1,7 @@
+## ZMK
+
+Repeated field "label" will cause no error in the Build Firmware process, but will cause the keyboard to not work properly.
+
+## More config files
+
+- <https://github.com/Ga68/glove80-zmk-config-west>
