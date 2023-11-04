@@ -1,4 +1,5 @@
 #define NUMPAD_LAYER 3
+#define SYMBOL_LAYER 4
 
 
 behaviors {
@@ -10,5 +11,13 @@ behaviors {
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&mo NUMPAD_LAYER>, <&to NUMPAD_LAYER>;
+    };
+
+    symbol: tap_dance_symbol {
+        compatible = "zmk,behavior-tap-dance";
+        label = "LAYER_TAP_DANCE_SYMBOL";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mo SYMBOL_LAYER>, <&to SYMBOL_LAYER>;
     };
 };
